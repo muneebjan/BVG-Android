@@ -1,5 +1,5 @@
 
-# BVGNativ
+# BVG-Android
 
 BVGNativ is a **native Android app** built with **Jetpack Compose** that allows users to search for BVG stops in Berlin and view upcoming departures in real-time. It uses the **BVG Open API** to fetch locations and departures.
 

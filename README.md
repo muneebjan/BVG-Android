@@ -46,7 +46,7 @@ BVG Transport is a **native Android app** built with **Jetpack Compose** that al
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/BVGNativ.git
+git clone https://github.com/muneebjan/BVG-Android
 ```
 
 2. Open the project in **Android Studio (Electric Eel or newer)**.

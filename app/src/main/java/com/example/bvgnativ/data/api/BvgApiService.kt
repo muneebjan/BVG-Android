@@ -1,6 +1,5 @@
 package com.example.bvgnativ.data.api
-
-import com.example.bvgnativ.data.model.Departure
+import com.example.bvgnativ.data.model.DeparturesResponse
 import com.example.bvgnativ.data.model.Stop
 import retrofit2.http.GET
 import retrofit2.http.Path
@@ -15,6 +14,9 @@ interface BvgApiService {
 
     @GET("stops/{stopId}/departures")
     suspend fun getDepartures(
-        @Path("stopId") stopId: String
-    ): List<Departure>
+        @Path("stopId") stopId: String,
+        @Query("results") results: Int = 5
+    ): DeparturesResponse  // <-- root is an object, not a list
+
+
 }

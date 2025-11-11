@@ -13,6 +13,8 @@ class BvgRepository {
     }
 
     suspend fun getDepartures(stopId: String): List<Departure> {
-        return api.getDepartures(stopId)
+        val response = api.getDepartures(stopId)
+        return response.departures
     }
+
 }
